@@ -573,6 +573,10 @@ body{
     margin-bottom: auto;
 }
 
+.ava__min{
+    display: none;
+}
+
 /* about style end */
 /* main style end */
 
@@ -702,7 +706,7 @@ body{
     padding: 15px;
 }
 
-.fa {
+.fa{
     text-align: center;
     width: 48px;
     height: 48px;
@@ -776,7 +780,6 @@ body{
     }
 }    
 
-
 @media screen and (max-width: 1020px) {
 
     .header__wrapper{
@@ -823,24 +826,21 @@ body{
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
 
     .header__wrapper{
-        max-width: 780px;
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .main{
-        max-width: 780px;
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer{
-        max-width: 780px;
         margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
@@ -849,23 +849,36 @@ body{
     .text-link{
         font-size: 14px;
     }
-    
+
+    .header__link{
+        font-size: 16px;
+        line-height: 23px;
+    }
+
 }    
 
 
-@media screen and (max-width: 780px) {    
-    body {
-        width: 100% !important;
-    }
+@media screen and (max-width: 780px) {
 
     .header{
         display: none;
-        position: static; 
+        position: static;
     }
+
+    .main{
+        margin: 0 auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
 
     .hello__conteiner{
         padding-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+    }
+
+    .hello__text{
+        padding-left: 10px;
     }
 
     .header__active{
@@ -873,18 +886,11 @@ body{
     }
 
     .header__wrapper{
-        max-width: 780px;
         margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    .main{
-        max-width: 320px;
-        margin: 0 auto;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
 
     .title{
         font-size: 20px;
@@ -892,8 +898,13 @@ body{
         font-weight: 400;
     }
 
-    .ava{
+    .hello__ava{
         display: none;
+    }
+
+    .ava__min{
+        display: block;
+        padding: 20px;
     }
 
     .university__logo{
@@ -901,27 +912,13 @@ body{
     }
 
     .img{
-        width: 320px; 
-        height: 240px;
+        width: 280px;
+        height: 200px;
     }
 
-    .footer{
-        max-width: 320px;
-        margin: 0 auto;
-    }
-    
     .text{
         font-size: 16px;
         line-height: 23px;
-    }
-
-    .fa{
-        width: 30px;
-        height: 30px;
-    }
-    
-    .text-link{
-        display: none;
     }
 
     .skills__and__summary__list{
@@ -929,4 +926,31 @@ body{
         flex-wrap: wrap;
     }
 
+    .skills__list{
+        padding-bottom: 25px;
+    }
+
+    .summary__list{
+        padding-bottom: 25px;
+    }
+
+
+    .footer{
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .fa{
+        display: none;
+    }
+
+    .text-link{
+        font-size: 25px;
+    }
+
+    .text-link:hover, .text-link:focus, .text-link:active{
+        opacity: .75;
+    }
+
 }
+
